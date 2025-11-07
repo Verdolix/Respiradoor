@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Game Lobby</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="lobby">
+    <img src="assets/images/lobby.png" class="lobby-bg" alt="Lobby Background">
+
+    <!-- Player Slots -->
+    <div class="player-slot" data-player="1" style="top: 20%; left: 20%;">+</div>
+    <div class="player-slot" data-player="2" style="top: 20%; left: 60%;">+</div>
+    <div class="player-slot" data-player="3" style="top: 50%; left: 30%;">+</div>
+    <div class="player-slot" data-player="4" style="top: 50%; left: 70%;">+</div>
+
+    <!-- Start Button -->
+    <button id="start-game">Start Game</button>
+  </div>
+
+  <!-- Socket.IO -->
+  <script src="https://cdn.socket.io/4.6.1/socket.io.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
